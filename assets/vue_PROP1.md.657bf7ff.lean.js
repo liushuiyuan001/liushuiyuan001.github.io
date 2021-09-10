@@ -1,0 +1,1 @@
+import{o as e,c as t,d as n}from"./app.acfc0ccb.js";const o='{"title":"vue组件传值上","description":"","frontmatter":{},"headers":[{"level":3,"title":"vue组件传值上","slug":"vue组件传值上"}],"relativePath":"vue/PROP1.md","lastUpdated":1631282289130}',a={},r=[n('',9)];a.render=function(n,o,a,l,u,s){return e(),t("div",null,r)};export{o as __pageData,a as default};
