@@ -12,6 +12,7 @@ yarn build
 # if you are deploying to a custom domain
 # echo 'www.example.com' > CNAME
 
+mv docs/.vitepress/dist/ ./
 git init
 git add -A
 git commit -m 'deploy'
