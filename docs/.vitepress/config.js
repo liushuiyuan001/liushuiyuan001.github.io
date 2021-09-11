@@ -34,7 +34,10 @@ module.exports = {
 			},
 			{
 				text: 'JS',
-				link: '/js/BASE'
+				link: '/js/BASE',
+				children: [
+					{ text: 'Map', link: '/js/Map' },
+				]
 			}
 		]
 	}
