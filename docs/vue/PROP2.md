@@ -2,7 +2,7 @@
 
    1. $parent/$childern & ref
    ##### ref
-   ```
+   ```vue
     <div ref="a"></div>
     data(){
        return {
@@ -13,7 +13,7 @@
     this.refs.a.title = "Hello Vue"
    ```
    #####  $parent/$childern
-   ```
+   ```javascript
     // Son.vue
     data(){
        return {
@@ -37,13 +37,14 @@
 
    ```
    3. provide / inject这对选项需要一起使用
+
     vuejs 官网解释
    ```
     provide 和 inject 主要为高阶插件/组件库提供用例。并不推荐直接用于应用程序代码中。
     这对选项需要一起使用，以允许一个祖先组件向其所有子孙后代注入一个依赖，不论组件层次有多深，并在起上下游关系成立的时间里始终生效。如果你熟悉 React，这与 React 的上下文特性很相似。
    ```
     官网demo,具体见官网。
-   ```
+   ```javascript
    // 父级组件提供 'foo'
    var Provider = {
          provide: {
@@ -69,8 +70,8 @@
    即A组件的color变化后，组件E、F会跟着变（核心代码如下：）
    ```
    4. broadcast / dispatch
-   Vue1.0有$boardcast(通知所有子组件触发方法)与$diapatch(通知所有父组件触发方法)，vue2.0就删掉了。但是在一些组价库中，还是有这个方法，比如ElementUI
-   ```
+      Vue1.0有$boardcast(通知所有子组件触发方法)与$diapatch(通知所有父组件触发方法)，vue2.0就删掉了。但是在一些组价库中，还是有这个方法，比如ElementUI
+   ```javascript
    Vue.prototype.$diapatch = function $diapatch(eventName, data){
          let parent = this.$parent
          while(parent) {
@@ -79,7 +80,7 @@
          }
    }
    ```
-   ```
+   ```javascript
    Vue.prototype.$broadcast = function $broadcast(eventName, data) {
          const broadcast = (children) => {
          children.forEach(child => {

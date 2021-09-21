@@ -38,6 +38,13 @@ module.exports = {
 				children: [
 					{ text: 'Map', link: '/js/Map' },
 				]
+			},
+			{
+				text: 'Head First Design',
+				link: '/design/index',
+				children: [
+					{ text: '策略模式', link: '/design/chapter01' },
+				]
 			}
 		]
 	}

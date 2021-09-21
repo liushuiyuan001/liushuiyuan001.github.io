@@ -1,6 +1,6 @@
 ### Map
   与对象不同之处：对象是字符串键-任意类型值，Map是任意类型键-任意类值值
-```
+```javascript
 	const m = new Map();
 	const o = {p: 'Hello World'}
 
@@ -26,7 +26,7 @@
 	m.entries() //MapIterator [key,value]
 ```
    用一个二维数组初始化，里层的数组是一个长度为2的数组，第一个元素会被初始化为key，第二个元素会被初始化为value
-```
+```javascript
 	const m = new Map([
 		['name', '张三'],
 		['title', 'Author']

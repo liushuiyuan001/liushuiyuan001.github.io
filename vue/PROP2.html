@@ -6,16 +6,16 @@
     <title>vue组件传值下 | liushuiyuan's Blog</title>
     <meta name="description" content="我的vitepress博客.">
     <link rel="stylesheet" href="/assets/style.cac40d77.css">
-    <link rel="modulepreload" href="/assets/Home.d37a3257.js">
-    <link rel="modulepreload" href="/assets/app.fa98a2f6.js">
-    <link rel="modulepreload" href="/assets/vue_PROP2.md.3d6286aa.lean.js">
-    <link rel="modulepreload" href="/assets/app.fa98a2f6.js">
+    <link rel="modulepreload" href="/assets/Home.f6feaeeb.js">
+    <link rel="modulepreload" href="/assets/app.4b6115df.js">
+    <link rel="modulepreload" href="/assets/vue_PROP2.md.4a303fb2.lean.js">
+    <link rel="modulepreload" href="/assets/app.4b6115df.js">
     <link rel="icon" href="/img/linktolink.png">
     <meta name="twitter:title" content="vue组件传值下 | liushuiyuan&#39;s Blog">
     <meta property="og:title" content="vue组件传值下 | liushuiyuan&#39;s Blog">
   </head>
   <body>
-    <div id="app"><!--[--><div class="theme"><header class="nav-bar" data-v-675d8756><div class="sidebar-button" data-v-675d8756><svg class="icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z" class></path></svg></div><a class="nav-bar-title" href="/" aria-label="liushuiyuan&#39;s Blog, back to home" data-v-675d8756 data-v-4a583abe><!----> liushuiyuan&#39;s Blog</a><div class="flex-grow" data-v-675d8756></div><div class="nav" data-v-675d8756><nav class="nav-links" data-v-675d8756 data-v-eab3edfe><!--[--><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/" data-v-b8818f8c>首页 <!----></a></div></div><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/about/" data-v-b8818f8c>关于 <!----></a></div></div><!--]--><!----><!----></nav></div><!--[--><!--]--></header><aside class="sidebar" data-v-83e92a68><nav class="nav-links nav" data-v-83e92a68 data-v-eab3edfe><!--[--><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/" data-v-b8818f8c>首页 <!----></a></div></div><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/about/" data-v-b8818f8c>关于 <!----></a></div></div><!--]--><!----><!----></nav><!--[--><!--]--><ul class="sidebar-links" data-v-83e92a68><!--[--><li class="sidebar-link"><a class="sidebar-link-item" href="/vue/">Vue</a><ul class="sidebar-links"><li class="sidebar-link"><a class="sidebar-link-item" href="/vue/PROP1">Vue组件间传值(上)</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item active" href="/vue/PROP2">Vue组件间传值(下)</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/vue/PAGE">页面间传值</a><!----></li></ul></li><li class="sidebar-link"><a class="sidebar-link-item" href="/js/BASE">JS</a><ul class="sidebar-links"><li class="sidebar-link"><a class="sidebar-link-item" href="/js/Map">Map</a><!----></li></ul></li><!--]--></ul><!--[--><!--]--></aside><!-- TODO: make this button accessible --><div class="sidebar-mask"></div><main class="page" data-v-7eddb2c4><div class="container" data-v-7eddb2c4><!--[--><!--]--><div style="position:relative;" class="content" data-v-7eddb2c4><div><h3 id="vue组件传值下" tabindex="-1">vue组件传值下 <a class="header-anchor" href="#vue组件传值下" aria-hidden="true">#</a></h3><ol><li>$parent/$childern &amp; ref</li></ol><h5 id="ref" tabindex="-1">ref <a class="header-anchor" href="#ref" aria-hidden="true">#</a></h5><div class="language-"><pre><code> &lt;div ref=&quot;a&quot;&gt;&lt;/div&gt;
+    <div id="app"><!--[--><div class="theme"><header class="nav-bar" data-v-675d8756><div class="sidebar-button" data-v-675d8756><svg class="icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z" class></path></svg></div><a class="nav-bar-title" href="/" aria-label="liushuiyuan&#39;s Blog, back to home" data-v-675d8756 data-v-4a583abe><!----> liushuiyuan&#39;s Blog</a><div class="flex-grow" data-v-675d8756></div><div class="nav" data-v-675d8756><nav class="nav-links" data-v-675d8756 data-v-eab3edfe><!--[--><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/" data-v-b8818f8c>首页 <!----></a></div></div><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/about/" data-v-b8818f8c>关于 <!----></a></div></div><!--]--><!----><!----></nav></div><!--[--><!--]--></header><aside class="sidebar" data-v-83e92a68><nav class="nav-links nav" data-v-83e92a68 data-v-eab3edfe><!--[--><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/" data-v-b8818f8c>首页 <!----></a></div></div><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/about/" data-v-b8818f8c>关于 <!----></a></div></div><!--]--><!----><!----></nav><!--[--><!--]--><ul class="sidebar-links" data-v-83e92a68><!--[--><li class="sidebar-link"><a class="sidebar-link-item" href="/vue/">Vue</a><ul class="sidebar-links"><li class="sidebar-link"><a class="sidebar-link-item" href="/vue/PROP1">Vue组件间传值(上)</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item active" href="/vue/PROP2">Vue组件间传值(下)</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/vue/PAGE">页面间传值</a><!----></li></ul></li><li class="sidebar-link"><a class="sidebar-link-item" href="/js/BASE">JS</a><ul class="sidebar-links"><li class="sidebar-link"><a class="sidebar-link-item" href="/js/Map">Map</a><!----></li></ul></li><li class="sidebar-link"><a class="sidebar-link-item" href="/design/index">Head First Design</a><ul class="sidebar-links"><li class="sidebar-link"><a class="sidebar-link-item" href="/design/chapter01">策略模式</a><!----></li></ul></li><!--]--></ul><!--[--><!--]--></aside><!-- TODO: make this button accessible --><div class="sidebar-mask"></div><main class="page" data-v-7eddb2c4><div class="container" data-v-7eddb2c4><!--[--><!--]--><div style="position:relative;" class="content" data-v-7eddb2c4><div><h3 id="vue组件传值下" tabindex="-1">vue组件传值下 <a class="header-anchor" href="#vue组件传值下" aria-hidden="true">#</a></h3><ol><li>$parent/$childern &amp; ref</li></ol><h5 id="ref" tabindex="-1">ref <a class="header-anchor" href="#ref" aria-hidden="true">#</a></h5><div class="language-vue"><pre><code> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>a<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
  data(){
     return {
        title:&quot;Hello World&quot;
@@ -23,66 +23,67 @@
  }
  //访问
  this.refs.a.title = &quot;Hello Vue&quot;
-</code></pre></div><h5 id="parent-childern" tabindex="-1">$parent/$childern <a class="header-anchor" href="#parent-childern" aria-hidden="true">#</a></h5><div class="language-"><pre><code> // Son.vue
- data(){
-    return {
-       sonTitle:&quot;Son Title&quot;
-    }
- }
- // 访问父组件属性
- this.$parent.fartherTitle = &quot;Son Change Title&quot;
- Farther.vue
- &lt;Son&gt;&lt;/Son&gt;
- data(){
-    return {
-       fartherTitle:&quot;Farther Title&quot;
-    }
- }
- //访问子组件属性
- this.$children[0].sonTitle = &#39;Farther Change Title&#39;
+</code></pre></div><h5 id="parent-childern" tabindex="-1">$parent/$childern <a class="header-anchor" href="#parent-childern" aria-hidden="true">#</a></h5><div class="language-javascript"><pre><code> <span class="token comment">// Son.vue</span>
+ <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+       sonTitle<span class="token operator">:</span><span class="token string">&quot;Son Title&quot;</span>
+    <span class="token punctuation">}</span>
+ <span class="token punctuation">}</span>
+ <span class="token comment">// 访问父组件属性</span>
+ <span class="token keyword">this</span><span class="token punctuation">.</span>$parent<span class="token punctuation">.</span>fartherTitle <span class="token operator">=</span> <span class="token string">&quot;Son Change Title&quot;</span>
+ Farther<span class="token punctuation">.</span>vue
+ <span class="token operator">&lt;</span>Son<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>Son<span class="token operator">&gt;</span>
+ <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+       fartherTitle<span class="token operator">:</span><span class="token string">&quot;Farther Title&quot;</span>
+    <span class="token punctuation">}</span>
+ <span class="token punctuation">}</span>
+ <span class="token comment">//访问子组件属性</span>
+ <span class="token keyword">this</span><span class="token punctuation">.</span>$children<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>sonTitle <span class="token operator">=</span> <span class="token string">&#39;Farther Change Title&#39;</span>
 </code></pre></div><ol start="2"><li>$attrs、$listeners ----父向子通讯</li></ol><div class="language-"><pre><code>
-</code></pre></div><ol start="3"><li>provide / inject这对选项需要一起使用 vuejs 官网解释</li></ol><div class="language-"><pre><code> provide 和 inject 主要为高阶插件/组件库提供用例。并不推荐直接用于应用程序代码中。
+</code></pre></div><ol start="3"><li>provide / inject这对选项需要一起使用</li></ol><pre><code>vuejs 官网解释
+</code></pre><div class="language-"><pre><code> provide 和 inject 主要为高阶插件/组件库提供用例。并不推荐直接用于应用程序代码中。
  这对选项需要一起使用，以允许一个祖先组件向其所有子孙后代注入一个依赖，不论组件层次有多深，并在起上下游关系成立的时间里始终生效。如果你熟悉 React，这与 React 的上下文特性很相似。
 </code></pre></div><pre><code>官网demo,具体见官网。
-</code></pre><div class="language-"><pre><code>// 父级组件提供 &#39;foo&#39;
-var Provider = {
-      provide: {
-         foo: &#39;bar&#39;
-      }
-}
-// 子组件注入 &#39;foo&#39;
-var Child = {
-      inject: [&#39;foo&#39;],
-      created () {
-         console.log(this.foo) // =&gt; &quot;bar&quot;
-      }
-}
+</code></pre><div class="language-javascript"><pre><code><span class="token comment">// 父级组件提供 &#39;foo&#39;</span>
+<span class="token keyword">var</span> Provider <span class="token operator">=</span> <span class="token punctuation">{</span>
+      provide<span class="token operator">:</span> <span class="token punctuation">{</span>
+         foo<span class="token operator">:</span> <span class="token string">&#39;bar&#39;</span>
+      <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 子组件注入 &#39;foo&#39;</span>
+<span class="token keyword">var</span> Child <span class="token operator">=</span> <span class="token punctuation">{</span>
+      inject<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&#39;foo&#39;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token function">created</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>foo<span class="token punctuation">)</span> <span class="token comment">// =&gt; &quot;bar&quot;</span>
+      <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 </code></pre></div><p>provide与inject 怎么实现数据响应式</p><div class="language-"><pre><code>provide祖先组件的实例，然后在子孙组件中注入依赖，这样就可以在子孙组件中直接修改祖先组件的实例的属性，
 不过这种方法有个缺点就是这个实例上挂载很多没有必要的东西比如props，methods
 </code></pre></div><div class="language-"><pre><code>使用2.6最新API Vue.observable 优化响应式 provide(推荐) 我们来看个例子：
 孙组件E 和 获取A组件传递过来的color值，并能实现数据响应式变化，
 即A组件的color变化后，组件E、F会跟着变（核心代码如下：）
-</code></pre></div><ol start="4"><li>broadcast / dispatch Vue1.0有$boardcast(通知所有子组件触发方法)与$diapatch(通知所有父组件触发方法)，vue2.0就删掉了。但是在一些组价库中，还是有这个方法，比如ElementUI</li></ol><div class="language-"><pre><code>Vue.prototype.$diapatch = function $diapatch(eventName, data){
-      let parent = this.$parent
-      while(parent) {
-         parent.emit(eventName,data)
-         parent = this.$parent
-      }
-}
-</code></pre></div><div class="language-"><pre><code>Vue.prototype.$broadcast = function $broadcast(eventName, data) {
-      const broadcast = (children) =&gt; {
-      children.forEach(child =&gt; {
-         child.$emit(eventName, data)
-         if (child.$children) {
-         broadcast(child.$children)
-         }
-      })
-      }
-      broadcast(this.$children)
-}
+</code></pre></div><ol start="4"><li>broadcast / dispatch Vue1.0有$boardcast(通知所有子组件触发方法)与$diapatch(通知所有父组件触发方法)，vue2.0就删掉了。但是在一些组价库中，还是有这个方法，比如ElementUI</li></ol><div class="language-javascript"><pre><code><span class="token class-name">Vue</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">$diapatch</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">$diapatch</span><span class="token punctuation">(</span><span class="token parameter">eventName<span class="token punctuation">,</span> data</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">let</span> parent <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$parent
+      <span class="token keyword">while</span><span class="token punctuation">(</span>parent<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+         parent<span class="token punctuation">.</span><span class="token function">emit</span><span class="token punctuation">(</span>eventName<span class="token punctuation">,</span>data<span class="token punctuation">)</span>
+         parent <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$parent
+      <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-javascript"><pre><code><span class="token class-name">Vue</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">$broadcast</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">$broadcast</span><span class="token punctuation">(</span><span class="token parameter">eventName<span class="token punctuation">,</span> data</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> <span class="token function-variable function">broadcast</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">children</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      children<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">child</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+         child<span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span>eventName<span class="token punctuation">,</span> data<span class="token punctuation">)</span>
+         <span class="token keyword">if</span> <span class="token punctuation">(</span>child<span class="token punctuation">.</span>$children<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+         <span class="token function">broadcast</span><span class="token punctuation">(</span>child<span class="token punctuation">.</span>$children<span class="token punctuation">)</span>
+         <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+      <span class="token function">broadcast</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$children<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
 </code></pre></div><ol start="5"><li>model和.sync</li></ol><div class="language-"><pre><code>
 </code></pre></div><ol start="6"><li>发布/订阅模式、rxjs等</li></ol></div></div><footer class="page-footer" data-v-7eddb2c4 data-v-fb8d84c6><div class="edit" data-v-fb8d84c6><div class="edit-link" data-v-fb8d84c6 data-v-1ed99556><!----></div></div><div class="updated" data-v-fb8d84c6><!----></div></footer><div class="next-and-prev-link" data-v-7eddb2c4 data-v-38ede35f><div class="container" data-v-38ede35f><div class="prev" data-v-38ede35f><a class="link" href="/vue/PROP1" data-v-38ede35f><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" class="icon icon-prev" data-v-38ede35f><path d="M19,11H7.4l5.3-5.3c0.4-0.4,0.4-1,0-1.4s-1-0.4-1.4,0l-7,7c-0.1,0.1-0.2,0.2-0.2,0.3c-0.1,0.2-0.1,0.5,0,0.8c0.1,0.1,0.1,0.2,0.2,0.3l7,7c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3c0.4-0.4,0.4-1,0-1.4L7.4,13H19c0.6,0,1-0.4,1-1S19.6,11,19,11z"></path></svg><span class="text" data-v-38ede35f>Vue组件间传值(上)</span></a></div><div class="next" data-v-38ede35f><a class="link" href="/vue/PAGE" data-v-38ede35f><span class="text" data-v-38ede35f>页面间传值</span><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" class="icon icon-next" data-v-38ede35f><path d="M19.9,12.4c0.1-0.2,0.1-0.5,0-0.8c-0.1-0.1-0.1-0.2-0.2-0.3l-7-7c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l5.3,5.3H5c-0.6,0-1,0.4-1,1s0.4,1,1,1h11.6l-5.3,5.3c-0.4,0.4-0.4,1,0,1.4c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3l7-7C19.8,12.6,19.9,12.5,19.9,12.4z"></path></svg></a></div></div></div><!--[--><!--]--></div></main></div><!----><!--]--></div>
-    <script>__VP_HASH_MAP__ = JSON.parse("{\"index.md\":\"04b12d30\",\"about_index.md\":\"1bbf3b67\",\"js_base.md\":\"d2876544\",\"js_map.md\":\"f01bd763\",\"vue_page.md\":\"d68dcbb3\",\"vue_prop1.md\":\"9ce7c660\",\"vue_prop2.md\":\"3d6286aa\",\"vue_index.md\":\"2c6fa83a\"}")</script>
-    <script type="module" async src="/assets/app.fa98a2f6.js"></script>
+    <script>__VP_HASH_MAP__ = JSON.parse("{\"index.md\":\"134403ba\",\"about_index.md\":\"e8d705b1\",\"design_chapter01.md\":\"49495edc\",\"design_index.md\":\"09c06a64\",\"js_base.md\":\"639cb415\",\"js_map.md\":\"2c3d7384\",\"vue_page.md\":\"eef58e10\",\"vue_prop1.md\":\"0b5cb5f6\",\"vue_prop2.md\":\"4a303fb2\",\"vue_index.md\":\"b4fd210d\"}")</script>
+    <script type="module" async src="/assets/app.4b6115df.js"></script>
   </body>
 </html>

@@ -1,7 +1,7 @@
 ### vue组件传值上
 
    1. 父传子（props）
-   ```
+   ```vue
     Farther.vue
        <Son :monery="moneryFarther"></Son> 
     Son.vue
@@ -17,7 +17,7 @@
 
    ```
    2. 子传父（通过事件回调机制，父监听子事件，子emit父监听的事件）
-   ```
+   ```vue
     Farther.vue
        <Son @play="changePlay"></Son> 
        changePlay(reason){
@@ -31,9 +31,10 @@
 
    ```
    3. vuex/mobx
+      
       ###### [详解见vuejs官网](https://cn.vuejs.org/)
    4. localStorage
-   ```
+   ```javascript
 		// set
 		localStorage.setItem('name','小明')
 		// get 
@@ -42,7 +43,7 @@
 		localStorage.clear()
    ```
    5. 事件总线
-   ```
+   ```javascript
 		1.挂载在全局原型上
 		Vue.prototype.$bus = new Vue();
 		2.监听事件
