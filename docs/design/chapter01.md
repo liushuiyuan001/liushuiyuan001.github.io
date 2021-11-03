@@ -119,13 +119,13 @@ public class HelloWorld {
     public  static void  main(String[] args) {
         Duck model = new ModelDuck();
         model.performFly();
-        model.setFlyBehavior(new FlyRockPowered());
+        model.setFlyBehavior(new FlyWithWings());
         model.performFly();
     }
 }
 
 // I can't fly
-// I'm flying with rocket!
+// I'm  flying!!
 ```
 
 ### 笔记

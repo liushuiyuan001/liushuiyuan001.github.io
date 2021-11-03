@@ -44,6 +44,7 @@ module.exports = {
 				link: '/design/index',
 				children: [
 					{ text: '策略模式', link: '/design/chapter01' },
+					{ text: '观察者模式', link: '/design/chapter02' },
 				]
 			}
 		]
