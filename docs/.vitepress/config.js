@@ -45,6 +45,7 @@ module.exports = {
 				children: [
 					{ text: '策略模式', link: '/design/chapter01' },
 					{ text: '观察者模式', link: '/design/chapter02' },
+					{ text: '装饰者模式', link: '/design/chapter03' },
 				]
 			}
 		]
