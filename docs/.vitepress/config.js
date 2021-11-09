@@ -48,6 +48,7 @@ module.exports = {
 					{ text: '装饰者模式', link: '/design/chapter03' },
 					{ text: '简单工厂', link: '/design/chapter04' },
 					{ text: '抽象工厂模式', link: '/design/chapter05' },
+					{ text: '命令模式', link: '/design/chapter06' },
 				]
 			}
 		]
