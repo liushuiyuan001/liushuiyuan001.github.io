@@ -35,3 +35,5 @@
 	[...m.keys()] // ['name','title']
 	[...m.values()] // ['张三','Author']
 ```
+
+​	Map中的key是有序的  Object的key是无序的
