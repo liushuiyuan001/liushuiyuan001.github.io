@@ -35,3 +35,50 @@
    3. 脱离DOM的引用：获取一个DOM元素的引用，而后面这个元素被删除，由于一直保留了对这个元素的引用，所以它也无法被回收
    4. 闭包：不合理的使用闭包，从而导致某些变量一直被留在内存当中
 
+7. Async/await 对比Promise的优势
+
+   1.  代码读起来更加同步，Promise虽然摆脱了回调地狱， 但是then的链式调用也会带来额外的阅读负担
+   2. Promise传递中间值非常麻烦，而async/await几乎是同步的写法，非常优雅
+   3. 错误处理友好 async/await可以用成熟的try/catch Promise的错误捕获非常冗余
+   4. 调试友好 Promise的调试很差 由于没有代码块 你不能在一个返回表达式的箭头函数中设置dua难点 如果你在一个then代码块中使用调试器的步进 step-over功能，调试器并不会进入后续的then代码块，因为调试器只能跟踪同步代码的每一步。
+
+   ```javascript
+   let fs = require('fs');
+   
+   fs.readFile('./a.txt', 'utf8', function (err, data) {
+   	fs.readFile(data, 'utf8', function (err, data) {
+   		fs.readFile(data, 'utf8', function (err, data) {
+   			console.log(data)
+   		})
+   	})
+   })
+   
+   function read(url) {
+   	return new Promise(function (resolve, reject) {
+   		fs.readFile(url, 'utf8', function (err, data) {
+   			err && reject(err);
+   			console.log('read', data);
+   			resolve(data);
+   		})
+   	})
+   }
+   
+   read('./a.txt').then(data => {
+   	return read(data)
+   }).then(data => {
+   	return read(data)
+   }).then(data => {
+   	console.log('finished', data)
+   })
+   
+   async function testAwait() {
+   	const data1 = await read('./a.txt')
+   	const data2 = await read(data1)
+   	const data3 = await read(data2)
+   	console.log('data3', data3)
+   }
+   testAwait()
+   ```
+
+   
+

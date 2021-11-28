@@ -37,6 +37,7 @@ module.exports = {
 				link: '/js/BASE',
 				children: [
 					{ text: 'Map', link: '/js/Map' },
+					{ text: '手写代码', link: '/js/Code' },
 				]
 			},
 			{
