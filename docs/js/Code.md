@@ -366,3 +366,110 @@ function throttle(fn, delay) {
 }
 ```
 
+#### 10. 手写类型判断函数
+
+```javascript
+function getType(value) {
+	// 判断数据是null的情况
+	if (value === null) {
+		return 'null'
+	}
+	// 判断数据是引用类型的情况
+	if (typeof value === 'object') {
+		const typeStr = Object.prototype.toString.call(value)
+		const str = typeStr.split(' ')[1]
+		const type = str.substr(0, str.length - 1)
+		return type.toLowerCase()
+	} else {
+		return typeof value
+	}
+}
+```
+
+#### 13. 手写bind函数
+
+```javascript
+// bind函数的实现步骤
+// 1. 判断调用对象是否为函数，即使我们是定义在函数的原型上的，但是可能出现使用call等方式调用的情况
+// 2. 保存当前函数的引用，获取其余传入参数值
+// 3. 创建一个函数返回
+// 4. 函数内部使用apply来绑定函数调用，需要判断函数作为构造函数的情况，这个时候需要传入当前函数的this给apply调用，其余情况都传入指定的上下文对象。
+
+Function.prototype.myBind = function (context) {
+	// 判断调用函数是否为函数
+	if (typeof this !== 'function') {
+		throw new TypeError('Error')
+	}
+
+	// 获取参数
+	var args = [...this.arguments].slice(1)
+	var fn = this
+	return function Fn() {
+		// 根据调用方式 传入不同绑定值
+		return fn.apply(
+			this instanceof Fn ? this : context,
+			args.concat(...arguments)
+		)
+	}
+}
+```
+
+#### 14. 函数柯里化的实现
+
+```javascript
+// 函数柯里化指的是一种将使用多个参数的一个函数转换成一系列使用一个参数的函数的技术。
+function curry(fn, args) {
+	// 获取函数需要的参数长度
+	let length = fn.length
+	args = args || []
+
+	return function () {
+		let subArgs = args.slice(0)
+
+		// 拼接得到现有的所有参数
+		for (let i = 0; i < arguments.length; i++) {
+			subArgs.push(arguments[i])
+		}
+
+		// 判断参数的长度是否已经满足函数所需参数的长度
+		if (subArgs.length >= length) {
+			// 如果满足 执行函数
+			return fn.apply(this, subArgs)
+		} else {
+			// 如果不满足，递归返回柯里化的参数，等待参数的传入
+			return curry.call(this, fn, subArgs)
+		}
+	}
+}
+```
+
+#### 15. 实现AJAX请求
+
+```javascript
+function customAjax() {
+	const SEVER_URL = '/server'
+	const xhl = new XMLHttpRequest()
+	// 创建 Http 请求
+	xhr.open("GET", SEVER_URL, true)
+	// 设置状态监听函数
+	xhr.onreadystatechange = function () {
+		if (this.readyState !== 4) return
+		// 当请求成功时
+		if (this.status === 200 || this.status === 304) {
+			handle(this.response)
+		} else {
+			console.log(this.statusText)
+		}
+	}
+	// 设置请求失败的监听函数
+	xhr.onerror = function () {
+		console.log(this.statusText)
+	}
+	// 设置请求头信息
+	xhr.responseType = "json"
+	xhr.setRequestHeader("Accept", "application/json")
+	// 发送 Http 请求
+	xhr.send(null)
+}
+```
+
