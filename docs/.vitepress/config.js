@@ -38,6 +38,7 @@ module.exports = {
 				children: [
 					{ text: 'Map', link: '/js/Map' },
 					{ text: '手写代码', link: '/js/Code' },
+					{ text: '性能优化', link: '/js/Performance' },
 				]
 			},
 			{
