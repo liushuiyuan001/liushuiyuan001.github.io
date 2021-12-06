@@ -41,6 +41,7 @@ module.exports = {
 					{ text: '性能优化', link: '/js/Performance' },
 					{ text: '浏览器原理', link: '/js/Brower' },
 					{ text: '浏览器缓存', link: '/js/Http304' },
+					{ text: '面试', link: '/js/Interview' },
 				]
 			},
 			{

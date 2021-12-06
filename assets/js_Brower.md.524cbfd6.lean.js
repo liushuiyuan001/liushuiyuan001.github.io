@@ -1,0 +1,1 @@
+import{o as t,c as e}from"./app.6ce202a8.js";const r='{"title":"","description":"","frontmatter":{},"relativePath":"js/Brower.md","lastUpdated":1638445428269}',a={};a.render=function(r,a,o,s,d,i){return t(),e("div")};export{r as __pageData,a as default};
