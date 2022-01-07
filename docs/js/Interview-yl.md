@@ -29,6 +29,7 @@ HTMLWebpackPugin SplitChunksPlugin DIIPlugin      Plugin:
    1. 页面性能的提升：尽管在我们前面的各种论证对比下，虚拟 DOM 并非[最优解](https://www.zhihu.com/search?q=最优解&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra={"sourceType"%3A"article"%2C"sourceId"%3A405905695})，但在大多数场景下，虚拟 DOM 能给你的页面过得去的性能，并且提供给你更爽的开发模式。
    2. 开发效率的提升：通过对前端发展历史的描述可以看出，每一次对 DOM 操作的革新，背后都是对开发效率的提升。不得不提的是，在 React 或者 Vue 时代，同样的页面，我们的开发效率是提升了不少。就单单一个将输入框的内容输出到页面的 mvvm 模式的开发，引入 Vue 或 React 就可以快速搞定。
    3. 跨平台的问题：虚拟 DOM 是对渲染内容的一层抽象描述，这就使得视图层和渲染层做了解耦。这层对渲染层的描述可以是 web、native、小程序等多端的，在不同端可能只需要一份代码就可以 work 。毕竟连 Vue3 也将 DOM 操作的内容提在一个独立的 runtime-dom.js 模块中，目的就是在多端操作渲染层的内容从而实现跨平台的可能性。
+   4. 更利于前后端分离开发和组件拆分，项目拆分
 
 5. 类组件和函数组件的区别
 
@@ -42,7 +43,7 @@ HTMLWebpackPugin SplitChunksPlugin DIIPlugin      Plugin:
 
    Redux Mobx
 
-   Redux/ Reducer
+   Redux
 
 7. forceUpdate
 
