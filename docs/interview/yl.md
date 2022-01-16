@@ -10,15 +10,7 @@ HTMLWebpackPugin SplitChunksPlugin DIIPlugin      Plugin:
 
 1. 常用生命周期
 
-2. PureComponent 优化：浅比较Props和State值是否发生了变化 只有发生了变化才进行更新
-
-   相当于在ShouldCompoentUpdate进行了判断
-
-   If(this.statue.name !== props.state.name) {
-
-   ​	return false
-
-   }
+2. PureComponent 优化：浅比较Props和State值是否发生了变化 只有发生了变化才进行更新，如果组件有自己的shouldComponentUpdate则用组件自己的判断，否则才做浅比较
 
 3. key：diff算法优化 一般唯一id
 

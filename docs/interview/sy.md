@@ -1,10 +1,5 @@
 一、项目中的难点
 
-1. 投前不同项目性质下表单配置化
-2. 投前配置化
-3. 装饰器
-4. Table列表类继承
-
 二、项目中印象深刻的难点或者说遇到的问题解决思路
 
 1. spreadjs遇到问题解决思路
@@ -47,7 +42,7 @@ Box-szing的理解
 
 setTimeout里面是同步
 
-拿到setState最新值-第二个参数是个回调方法可以拿到最新值 vue中的市nextTick
+拿到setState最新值-第二个参数是个回调方法可以拿到最新值 vue中的是nextTick
 
 八、回调地狱的理解以及解决方法
 
@@ -57,11 +52,7 @@ promise解决了回调地狱但是变为链式调用，await变为同步调用
 
 九、new function和new Class的本质区别
 
-
-
 十、哪几种立即表达式（）()
-
-
 
 十一、React的动态组件实现方式
 
@@ -70,6 +61,7 @@ promise解决了回调地狱但是变为链式调用，await变为同步调用
    Config[xxxxx]  (ddd,xxxss)
 
 2. Props.children相当于vue的插槽
+3. hook或者函数组件直接返回组件
 
 十二、移动端经验
 
@@ -81,17 +73,14 @@ react-thunk框架
 
 十四、vue和react区别
 
-```
-react 中 all in js。没有template，直接用js渲染虚拟dom vue中有template
-react 中 更关注工程化 vue更关注易用性
-react 中 是主动diff渲染视图更新 vue是用的依赖收集
-react 中 喜欢从系统或者说其他借鉴借鉴方法，比如事件更新Fiber vue则喜欢用浏览器自带的promise
+```javascript
+react 中 直接用render方法返回虚拟dom vue中有template但也有render
+react 中 是调用setState主动diff渲染视图更新 vue是用的Object.definedPrototy或者v3的Proxy实现订阅发布模式
+react 中 自己实现了一套基于事件的异步更新事件 vue则喜欢用浏览器自带的微任务promise
 react 中 有类组件 vue中没有
-
 数据是不是可变的
-通过js操作一切还是各自的处理方式
-类式的组件写法还是声明式的写法
 react可以通过高阶组件（Higher Order Components--HOC）来扩展，而vue需要通过mixins来扩展
-什么功能内置，什么交给社区去做
+react diff算法是从前往后比较，vue是双端比较 用新旧节点的开始和结束下标对比
+react 采用Fiber把树的同步更新改为链表的可中断更新（diff过程中可中断，commit中就不能中断了）vue采用静态标记的方法提高diff效率
 ```
 

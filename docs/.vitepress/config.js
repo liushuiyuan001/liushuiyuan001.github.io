@@ -41,11 +41,23 @@ module.exports = {
 					{ text: '性能优化', link: '/js/Performance' },
 					{ text: '浏览器原理', link: '/js/Brower' },
 					{ text: '浏览器缓存', link: '/js/Http304' },
-					{ text: '面试', link: '/js/Interview-base' },
-					{ text: '面试', link: '/js/Interview-yl' },
-					{ text: '面试', link: '/js/Interview-wy' },
-					{ text: '面试', link: '/js/Interview-wy1' },
-					{ text: '面试', link: '/js/Interview-hk' },
+				]
+			},
+			{
+				text: '面试集合',
+				link: '/interview/base',
+				children: [
+					{ text: '面试', link: '/interview/base' },
+					{ text: '面试', link: '/interview/bbj' },
+					{ text: '面试', link: '/interview/dh' },
+					{ text: '面试', link: '/interview/hk' },
+					{ text: '面试', link: '/interview/ql' },
+					{ text: '面试', link: '/interview/sy' },
+					{ text: '面试', link: '/interview/wy' },
+					{ text: '面试', link: '/interview/wy1' },
+					{ text: '面试', link: '/interview/xf' },
+					{ text: '面试', link: '/interview/yl' },
+					{ text: '面试', link: '/interview/zcy' },
 				]
 			},
 			{

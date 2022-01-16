@@ -377,9 +377,7 @@ function getType(value) {
 	// 判断数据是引用类型的情况
 	if (typeof value === 'object') {
 		const typeStr = Object.prototype.toString.call(value)
-		const str = typeStr.split(' ')[1]
-		const type = str.substr(0, str.length - 1)
-		return type.toLowerCase()
+		return typeStr.slice(8,-1)
 	} else {
 		return typeof value
 	}

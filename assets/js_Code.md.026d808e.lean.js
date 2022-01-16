@@ -1,0 +1,1 @@
+import{o as n,c as s,b as a}from"./app.37666d6b.js";const t='{"title":"一、JavaScript基础","description":"","frontmatter":{},"headers":[{"level":3,"title":"一、JavaScript基础","slug":"一、javascript基础"}],"relativePath":"js/Code.md","lastUpdated":1641737190164}',p={},o=[a('',39)];p.render=function(a,t,p,e,c,l){return n(),s("div",null,o)};export{t as __pageData,p as default};

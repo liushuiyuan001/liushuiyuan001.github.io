@@ -1,18 +1,16 @@
-#### 组件的pureComponent原理和memo
+1. 组件的pureComponent原理和memo
+2. hook的useEffect 和 useLayout
+3. 函数的高阶组件理解以及问题
+4. 闭包理解，以及为什么形成闭包
+5. 在项目中用到了哪些设计模式
+6. mobx的原理以及对事务的理解
+7. hook的cleanup以及和compoentunmounted的区别
 
-#### hook的useEffect 和 useLayout
+```
+cleanup是在函数组件每次重新render时执行，compoententunmounted是在组件卸载时运行
+```
 
-#### 函数的高阶组件理解以及问题
-
-#### 闭包理解，以及为什么形成闭包
-
-#### 在项目中用到了哪些设计模式
-
-#### mobx的原理以及对事务的理解
-
-#### hook的cleanup以及和compoentunmounted的区别
-
-#### 链式调用一个数组中都为异步的方法
+8. 链式调用一个数组中都为异步的方法,后一个依赖前一个的输出参数
 
 ```javascript
 function testAsync(n) {
@@ -45,7 +43,7 @@ function B(arr) {
 B(asyncList)
 ```
 
-#### 双指针或者快慢对排序后的数组去重
+#### 双指针对排序后的数组去重
 
 ```javascript
 let arr = [1,2,3,4,4,5,6]
