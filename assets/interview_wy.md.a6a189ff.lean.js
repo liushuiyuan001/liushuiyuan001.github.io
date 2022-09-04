@@ -1,1 +1,0 @@
-import{o as p,c as i,b as e}from"./app.3fe4aed4.js";const l='{"title":"","description":"","frontmatter":{},"relativePath":"interview/wy.md","lastUpdated":1649066048545}',t={},a=[e('',9)];t.render=function(e,l,t,n,r,o){return p(),i("div",null,a)};export{l as __pageData,t as default};

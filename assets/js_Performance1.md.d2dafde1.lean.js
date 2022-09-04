@@ -1,1 +1,0 @@
-import{o as l,c as e,b as i}from"./app.37666d6b.js";const p='{"title":"性能优化","description":"","frontmatter":{},"headers":[{"level":3,"title":"性能优化","slug":"性能优化"}],"relativePath":"js/Performance1.md","lastUpdated":1640183382406}',a={},r=[i('',2)];a.render=function(i,p,a,n,o,d){return l(),e("div",null,r)};export{p as __pageData,a as default};

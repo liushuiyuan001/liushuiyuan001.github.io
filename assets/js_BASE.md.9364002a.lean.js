@@ -1,1 +1,0 @@
-import{o as l,c as i,b as p}from"./app.ce5cd593.js";const t='{"title":"","description":"","frontmatter":{},"relativePath":"js/BASE.md","lastUpdated":1637925885378}',o={},e=[p("",1)];o.render=function(p,t,o,s,n,a){return l(),i("div",null,e)};export{t as __pageData,o as default};

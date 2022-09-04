@@ -1,1 +1,0 @@
-import{o as e,c as a,d as n}from"./app.fa98a2f6.js";const t='{"title":"vue组件传值下","description":"","frontmatter":{},"headers":[{"level":3,"title":"vue组件传值下","slug":"vue组件传值下"}],"relativePath":"vue/PROP2.md","lastUpdated":1631329138733}',r={},d=[n('',21)];r.render=function(n,t,r,o,i,l){return e(),a("div",null,d)};export{t as __pageData,r as default};

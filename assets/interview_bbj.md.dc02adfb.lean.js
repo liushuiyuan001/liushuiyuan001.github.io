@@ -1,1 +1,0 @@
-import{o as n,c as a,b as s}from"./app.37666d6b.js";const t='{"title":"","description":"","frontmatter":{},"relativePath":"interview/bbj.md","lastUpdated":1642304714559}',e={},o=[s('',10)];e.render=function(s,t,e,p,l,r){return n(),a("div",null,o)};export{t as __pageData,e as default};

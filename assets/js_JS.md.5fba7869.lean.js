@@ -1,1 +1,0 @@
-import{o as t,c as l,b as r}from"./app.f15b287e.js";const d='{"title":"2. 哪些情况会导致内存泄漏","description":"","frontmatter":{},"headers":[{"level":3,"title":"2. 哪些情况会导致内存泄漏","slug":"_2-哪些情况会导致内存泄漏"}],"relativePath":"js/JS.md","lastUpdated":1638949497150}',o={},e=[r('',9)];o.render=function(r,d,o,i,s,n){return t(),l("div",null,e)};export{d as __pageData,o as default};
