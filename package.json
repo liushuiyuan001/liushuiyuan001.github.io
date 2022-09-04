@@ -5,10 +5,11 @@
   "main": "index.js",
   "author": "liushuiyuan001",
   "license": "MIT",
-   "scripts": {
+  "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
-    "serve": "vitepress serve docs"
+    "serve": "vitepress serve docs",
+    "deploy": "sh ./deploy.sh"
   },
   "devDependencies": {
     "vitepress": "^0.17.3"

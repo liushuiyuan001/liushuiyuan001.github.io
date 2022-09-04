@@ -71,6 +71,15 @@ module.exports = {
 					{ text: '抽象工厂模式', link: '/design/chapter05' },
 					{ text: '命令模式', link: '/design/chapter06' },
 				]
+			},
+			{
+				text: 'Vuejs设计与实现',
+				link: '/vuejs/index',
+				children: [
+					{ text: '第九章', link: '/vuejs/09' },
+					{ text: '第十章', link: '/vuejs/10' },
+					{ text: '第十一章', link: '/vuejs/11' }
+				]
 			}
 		]
 	}

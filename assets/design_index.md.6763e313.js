@@ -1,0 +1,1 @@
+import{o as t,c as e,a}from"./app.3fe4aed4.js";const r='{"title":"","description":"","frontmatter":{},"relativePath":"design/index.md","lastUpdated":1649066048544}',d={},n=[a("p",null,"《Head First》 设计模式读书总结",-1)];d.render=function(a,r,d,i,s,l){return t(),e("div",null,n)};export{r as __pageData,d as default};

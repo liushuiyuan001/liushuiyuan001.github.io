@@ -1,0 +1,1 @@
+import{o as n,c as a,b as s}from"./app.3fe4aed4.js";const p='{"title":"单行多行显示省略号","description":"","frontmatter":{},"headers":[{"level":3,"title":"一、CSS基础","slug":"一、css基础"}],"relativePath":"js/Css.md","lastUpdated":1649066048546}',t={},e=[s('',51)];t.render=function(s,p,t,i,o,l){return n(),a("div",null,e)};export{p as __pageData,t as default};

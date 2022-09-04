@@ -1,0 +1,1 @@
+import{o as n,c as s,b as a}from"./app.3fe4aed4.js";const t='{"title":"Map","description":"","frontmatter":{},"headers":[{"level":3,"title":"Map","slug":"map"}],"relativePath":"js/Map.md","lastUpdated":1649066048546}',p={},o=[a('',6)];p.render=function(a,t,p,c,e,u){return n(),s("div",null,o)};export{t as __pageData,p as default};

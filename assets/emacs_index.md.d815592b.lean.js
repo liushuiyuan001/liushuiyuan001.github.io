@@ -1,0 +1,1 @@
+import{o as l,c as i,b as e}from"./app.3fe4aed4.js";const a='{"title":"常用快捷键","description":"","frontmatter":{},"headers":[{"level":2,"title":"常用快捷键","slug":"常用快捷键"}],"relativePath":"emacs/index.md","lastUpdated":1649725709678}',t={},c=[e('',2)];t.render=function(e,a,t,r,s,d){return l(),i("div",null,c)};export{a as __pageData,t as default};
