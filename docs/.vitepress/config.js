@@ -10,14 +10,14 @@ module.exports = {
 			'link',
 			{
 				rel: 'icon',
-				href: '/img/linktolink.png',//图片放在public文件夹下
+				href: '/logo.png',//图片放在public文件夹下
 			},
 		],
 	],
 	// 主题配置
 	themeConfig: {
 		// siteTitle: 'Hello World',
-		logo: '/logo.svg',
+		logo: '/logo.png',
 		//   头部导航
 		nav: [
 			{ text: '首页', link: '/' },
