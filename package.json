@@ -12,6 +12,6 @@
     "deploy": "sh ./deploy.sh"
   },
   "devDependencies": {
-    "vitepress": "^0.17.3"
+    "vitepress": "^1.0.0-alpha.4"
   }
 }

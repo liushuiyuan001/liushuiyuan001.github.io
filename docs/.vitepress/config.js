@@ -16,17 +16,26 @@ module.exports = {
 	],
 	// 主题配置
 	themeConfig: {
+		// siteTitle: 'Hello World',
+		logo: '/logo.svg',
 		//   头部导航
 		nav: [
 			{ text: '首页', link: '/' },
 			{ text: '关于', link: '/about/' },
+		],
+		editLink: {
+			pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
+			text: 'Edit this page on GitHub'
+		},
+		socialLinks: [
+			{ icon: 'github', link: 'https://github.com/liushuiyuan001' },
 		],
 		//   侧边导航
 		sidebar: [
 			{
 				text: 'Vue',
 				link: '/vue/',
-				children: [
+				items: [
 					{ text: 'Vue组件间传值(上)', link: '/vue/PROP1' },
 					{ text: 'Vue组件间传值(下)', link: '/vue/PROP2' },
 					{ text: '页面间传值', link: '/vue/PAGE' },
@@ -35,7 +44,7 @@ module.exports = {
 			{
 				text: 'JS',
 				link: '/js/BASE',
-				children: [
+				items: [
 					{ text: 'Map', link: '/js/Map' },
 					{ text: '手写代码', link: '/js/Code' },
 					{ text: '性能优化', link: '/js/Performance' },
@@ -46,7 +55,7 @@ module.exports = {
 			{
 				text: '面试集合',
 				link: '/interview/base',
-				children: [
+				items: [
 					{ text: '面试', link: '/interview/base' },
 					{ text: '面试', link: '/interview/bbj' },
 					{ text: '面试', link: '/interview/dh' },
@@ -63,7 +72,7 @@ module.exports = {
 			{
 				text: 'Head First Design',
 				link: '/design/index',
-				children: [
+				items: [
 					{ text: '策略模式', link: '/design/chapter01' },
 					{ text: '观察者模式', link: '/design/chapter02' },
 					{ text: '装饰者模式', link: '/design/chapter03' },
@@ -75,12 +84,16 @@ module.exports = {
 			{
 				text: 'Vuejs设计与实现',
 				link: '/vuejs/index',
-				children: [
+				items: [
 					{ text: '第九章', link: '/vuejs/09' },
 					{ text: '第十章', link: '/vuejs/10' },
 					{ text: '第十一章', link: '/vuejs/11' }
 				]
 			}
-		]
+		],
+		footer: {
+			message: 'Released under the MIT License.',
+			copyright: 'Copyright © 2022-present LiuShuiyuan'
+		}
 	}
 }
