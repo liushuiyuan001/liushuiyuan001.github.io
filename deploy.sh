@@ -12,9 +12,6 @@ yarn build
 # if you are deploying to a custom domain
 # echo 'www.example.com' > CNAME
 
-yarn build
-cp -rf docs/.vitepress/dist/* ./
-git init
 git add -A
 git commit -m 'deploy'
 git push
