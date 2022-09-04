@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as n,a as p}from"./app.a302813e.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"interview/zcy.md"}'),l={name:"interview/zcy.md"},e=p("",12),o=[e];function c(t,i,r,C,A,d){return n(),a("div",null,o)}const g=s(l,[["render",c]]);export{u as __pageData,g as default};
