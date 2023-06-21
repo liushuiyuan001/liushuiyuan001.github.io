@@ -1,0 +1,1 @@
+import{_ as e,o as r,c as t}from"./chunks/framework.1156b012.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"js/Brower.md","filePath":"js/Brower.md"}'),o={name:"js/Brower.md"};function a(s,c,n,p,_,d){return r(),t("div")}const f=e(o,[["render",a]]);export{m as __pageData,f as default};

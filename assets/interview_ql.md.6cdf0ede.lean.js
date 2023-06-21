@@ -1,0 +1,1 @@
+import{_ as s,o as n,c as a,O as l}from"./chunks/framework.1156b012.js";const A=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"interview/ql.md","filePath":"interview/ql.md"}'),p={name:"interview/ql.md"},o=l("",6),e=[o];function t(c,r,y,F,D,i){return n(),a("div",null,e)}const u=s(p,[["render",t]]);export{A as __pageData,u as default};

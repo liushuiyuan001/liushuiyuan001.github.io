@@ -1,1 +1,0 @@
-import{_ as s,c as p,o as e,a}from"./app.a302813e.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"interview/hk.md"}'),n={name:"interview/hk.md"},l=a("",1),t=[l];function i(o,c,r,_,d,u){return e(),p("div",null,t)}const C=s(n,[["render",i]]);export{m as __pageData,C as default};

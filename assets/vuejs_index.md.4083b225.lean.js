@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a}from"./chunks/framework.1156b012.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"vuejs/index.md","filePath":"vuejs/index.md"}'),n={name:"vuejs/index.md"};function s(r,o,c,d,i,p){return t(),a("div")}const f=e(n,[["render",s]]);export{m as __pageData,f as default};

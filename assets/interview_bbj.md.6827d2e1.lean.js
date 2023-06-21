@@ -1,1 +1,0 @@
-import{_ as s,c as n,o as a,a as l}from"./app.a302813e.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"interview/bbj.md"}'),p={name:"interview/bbj.md"},o=l("",10),e=[o];function t(c,r,i,D,y,C){return a(),n("div",null,e)}const u=s(p,[["render",t]]);export{d as __pageData,u as default};

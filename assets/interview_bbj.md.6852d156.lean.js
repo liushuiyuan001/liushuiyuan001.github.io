@@ -1,0 +1,1 @@
+import{_ as s,o as a,c as n,O as l}from"./chunks/framework.1156b012.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"interview/bbj.md","filePath":"interview/bbj.md"}'),e={name:"interview/bbj.md"},t=l("",10),p=[t];function o(c,r,i,y,D,C){return a(),n("div",null,p)}const h=s(e,[["render",o]]);export{d as __pageData,h as default};
