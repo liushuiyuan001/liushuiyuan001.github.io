@@ -1,17 +1,16 @@
 {
-  "name": "note",
+  "name": "rspress-doc-template",
   "version": "1.0.0",
-  "description": "note",
-  "main": "index.js",
-  "author": "liushuiyuan001",
-  "license": "MIT",
+  "private": true,
   "scripts": {
-    "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
-    "serve": "vitepress serve docs",
-    "deploy": "sh ./deploy.sh"
+    "dev": "rspress dev",
+    "build": "rspress build",
+    "preview": "rspress preview"
+  },
+  "dependencies": {
+    "rspress": "^1.5.0"
   },
   "devDependencies": {
-    "vitepress": "^1.0.0-beta.3"
+    "@types/node": "^14"
   }
 }

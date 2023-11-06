@@ -1,0 +1,37 @@
+[
+  {
+    "type": "dir",
+    "name": "basic",
+    "label": "Basic",
+    "collapsible": true,
+    "collapsed": false
+  },
+  {
+    "type": "dir",
+    "name": "design",
+    "label": "Design",
+    "collapsible": true,
+    "collapsed": false
+  },
+  {
+    "type": "dir",
+    "name": "interview",
+    "label": "Interview",
+    "collapsible": true,
+    "collapsed": false
+  },
+  {
+    "type": "dir",
+    "name": "vue",
+    "label": "Vue",
+    "collapsible": true,
+    "collapsed": false
+  },
+  {
+    "type": "dir",
+    "name": "vuejs",
+    "label": "Vuejs",
+    "collapsible": true,
+    "collapsed": false
+  }
+]
