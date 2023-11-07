@@ -1,4 +1,4 @@
-### vue组件传值下
+# vue组件传值下
 
    1. $parent/$childern & ref
    ##### ref

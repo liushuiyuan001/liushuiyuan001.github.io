@@ -1,3 +1,4 @@
+# js基础
 1. js有哪些类型
     number,string,boolean,object,undefined,null,symble,bigInt
 2. so 面试题来了？

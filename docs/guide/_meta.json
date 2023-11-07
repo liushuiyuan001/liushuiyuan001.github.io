@@ -8,6 +8,13 @@
   },
   {
     "type": "dir",
+    "name": "js",
+    "label": "js",
+    "collapsible": true,
+    "collapsed": false
+  },
+  {
+    "type": "dir",
     "name": "design",
     "label": "Design",
     "collapsible": true,
